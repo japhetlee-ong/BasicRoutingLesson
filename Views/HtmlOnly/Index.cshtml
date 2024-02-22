@@ -1,0 +1,55 @@
+﻿@{
+    Layout = null;
+}
+<html>
+<head>
+    <title>Title Page</title>
+    <link rel="stylesheet" href="~/css/sample.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <h1>H1</h1>
+    <h2>H2</h2>
+    <h3>H3</h3>
+    <h4>H4</h4>
+    <h5>H5</h5>
+    <h6>H6</h6>
+    <p>This is a paragraph</p>
+    <div>This is a div</div>
+
+
+    <a href=@Url.ActionLink("Index","Home")> Link </a>
+    <br/>
+    <a href="https://www.google.com">Link to Google</a>
+
+    <ol type="i">
+        <li>One item</li>
+        <li>Second item</li>
+    </ol>
+
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+    </ul>
+
+    <img src=""/>
+    <img src="" onload="onloadReady()" />
+    <img src="" width="100" alt=""/>
+
+    <p>This is a default text.</p>
+    <p class="sans-serif-bold">This is a sans-serif font</p>
+
+    <p id="text-programmatic" > Programmatic Access </p>
+</body>
+</html>
+
+<script >
+    function onloadReady(){
+        alert("Image loaded")
+    }
+
+    var programmatic = document.getElementById("text-programmatic")
+    programmatic.style.fontFamily = "sans-serif"
+</script>
